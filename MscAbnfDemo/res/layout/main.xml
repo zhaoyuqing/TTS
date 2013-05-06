@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:padding="10dip">
+	<EditText android:id="@+id/edit_text" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:gravity="top|left"
+		android:textSize="20sp" 
+		android:minLines="12" 
+		android:maxLines="12" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginTop="10dip"
+		android:gravity="center_horizontal">
+		<Button android:id="@+id/btn_recognize"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dip" 
+			android:layout_weight="1" 
+			android:text="直接识别语法" 
+			android:textSize="20sp"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:gravity="center_horizontal">
+		<Button android:id="@+id/btn_upload"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip" 
+			android:layout_marginRight="10dip" 
+			android:layout_marginBottom="10dip" 
+			android:layout_weight="1" 
+			android:text="上传语法" 
+			android:textSize="20sp"/>
+		<View android:layout_width="0dip" 
+			android:layout_height="0dip"
+			android:layout_weight="1" 
+			android:visibility="gone"/>	
+		<Button android:id="@+id/btn_recognizeGrammar" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip" 
+			android:layout_marginRight="10dip" 
+			android:layout_marginBottom="10dip" 
+			android:text="识别语法ID" 
+			android:layout_weight="1" 
+			android:textSize="20sp" />	
+	</LinearLayout>
+</LinearLayout>
